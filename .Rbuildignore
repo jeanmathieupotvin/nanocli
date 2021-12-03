@@ -1,0 +1,11 @@
+^\.gitignore$
+^\.usethis\.R$
+^\.Rproj$
+^\.Rproj\.user$
+^\.Rprofile$
+^LICENSE\.md$
+^\.github$
+^codecov\.yml$
+^temp$
+^\.Renviron$
+^usethis\.R$

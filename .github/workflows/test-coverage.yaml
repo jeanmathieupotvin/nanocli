@@ -1,0 +1,31 @@
+# This file was created by calling usethis::use_github_action("test-coverage").
+# It measures coverage and push results to Codecov whenever something is pushed
+# to the main branch. See .usethis.R for more information.
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: main
+
+name: test-coverage
+
+jobs:
+  test-coverage:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: r-lib/actions/setup-r@v1
+        with:
+          use-public-rspm: true
+
+      - uses: r-lib/actions/setup-r-dependencies@v1
+        with:
+          extra-packages: covr
+
+      - name: Test coverage
+        run: covr::codecov()
+        shell: Rscript {0}
