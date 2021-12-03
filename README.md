@@ -22,7 +22,7 @@ intent is threefold:
 contains more than 16 000 packages. Major communities have emerged over the
 years and organized themselves around recognized ecosystems. Each of these
 can be considered as meta-languages derived from `R`. Some of them greatly
-differ from `base` `R`. Others are so complex (dozens of dependencies)
+differ from base / core `R`. Others are so complex (dozens of dependencies)
 that they have a non-negligible *entry cost*.
 
 While these advanced ecosystems are *powerful*, they can introduce a
