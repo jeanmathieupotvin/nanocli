@@ -10,3 +10,4 @@
 ^\.Renviron$
 ^codecov\.yml$
 ^LICENSE\.md$
+^\.RData$

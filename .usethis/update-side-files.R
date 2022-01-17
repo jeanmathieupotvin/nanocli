@@ -9,7 +9,7 @@
 usethis::use_git_ignore(ignores = c(
     ".Rproj.user",
     ".Rhistory",
-    ".Rdata",
+    ".RData",
     ".Renviron",
     ".temp"
 ))
@@ -25,7 +25,7 @@ usethis::use_build_ignore(escape = TRUE, files = c(
     ".gitignore",
     ".Rproj.user",
     ".Rhistory",
-    ".Rdata",
+    ".RData",
     ".Rproj",
     ".Rprofile",
     ".Renviron",
