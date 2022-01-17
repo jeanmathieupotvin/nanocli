@@ -1,4 +1,4 @@
 library(testthat)
-library(nanotools)
+library(nanocli)
 
-test_check("nanotools")
+test_check("nanocli")
