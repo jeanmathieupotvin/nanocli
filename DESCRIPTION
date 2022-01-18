@@ -1,7 +1,7 @@
 Package: nanocli
 Title: Create command-line interfaces easily
 Version: 0.0.0.9000
-Authors@R: 
+Authors@R:
     person("Jean-Mathieu", "Potvin", , "jm@potvin.xyz", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-8237-422X"))
 Description: Convey messages with style and minimal code. Throw, register,
@@ -16,14 +16,14 @@ Language: en
 NeedsCompilation: no
 Roxygen: list(markdown = TRUE, r6 = TRUE)
 RoxygenNote: 7.1.2
-Suggests: 
+Suggests:
     covr,
     microbenchmark,
     testthat (>= 3.0.0),
     withr
 Config/testthat/edition: 3
 Config/testthat/parallel: true
-Depends: 
+Depends:
     R (>= 4.0)
-Imports: 
+Imports:
     R6
