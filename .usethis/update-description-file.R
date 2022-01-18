@@ -9,6 +9,7 @@
 usethis::use_description(check_name = TRUE, roxygen = TRUE, fields = list(
     Package          = "nanocli",
     Title            = "Create command-line interfaces easily",
+    Version          = "0.1.0.9000",
     License          = "MIT + file LICENSE",
     Language         = "en",
     Encoding         = "UTF-8",
@@ -40,7 +41,7 @@ usethis::use_testthat(edition = 3L, parallel = TRUE)
 
 
 usethis::use_package("R",              type = "Depends",  min_version = "4.0")
-usethis::use_package("R6",             type = "Imports",  min_version = NULL)
+#usethis::use_package("R6",             type = "Imports",  min_version = NULL)
 usethis::use_package("covr",           type = "Suggests", min_version = NULL)
 usethis::use_package("microbenchmark", type = "Suggests", min_version = NULL)
-usethis::use_package("withr",          type = "Suggests", min_version = NULL)
+#usethis::use_package("withr",          type = "Suggests", min_version = NULL)
