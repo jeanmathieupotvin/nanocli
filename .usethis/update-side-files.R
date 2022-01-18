@@ -7,6 +7,7 @@
 
 
 usethis::use_git_ignore(ignores = c(
+    "nanocli.code-workspace",
     ".Rproj.user",
     ".Rhistory",
     ".RData",
@@ -30,5 +31,6 @@ usethis::use_build_ignore(escape = TRUE, files = c(
     ".Rprofile",
     ".Renviron",
     "codecov.yml",
-    "LICENSE.md"
+    "LICENSE.md",
+    "nanocli.code-workspace"
 ))
