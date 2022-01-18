@@ -3,3 +3,5 @@
 .Rdata
 .Renviron
 .temp
+.RData
+nanocli.code-workspace

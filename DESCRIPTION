@@ -1,29 +1,26 @@
-Package: nanotools
-Title: Simpler Alternatives to R Features
-Version: 0.0.0.9000
+Package: nanocli
+Title: Create command-line interfaces easily
+Version: 0.1.0.9000
 Authors@R: 
     person("Jean-Mathieu", "Potvin", , "jm@potvin.xyz", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-8237-422X"))
-Description: A toolbox of simpler alternatives and wrapper functions to R
-    features. The intent is threefold: simplify features whenever possible
-    (keep it simple), minimize reliance on dependencies (keep it small),
-    and provide pure R alternatives that are as fast and efficient as
-    possible (keep it fast).
+Description: Convey messages with style and minimal code. Throw, register,
+    and retrieve errors more easily. Interpolate and format strings with a
+    clean syntax. Avoid dependency hell: this package only has one.
 License: MIT + file LICENSE
-URL: https://github.com/jeanmathieupotvin/nanotools
-BugReports: https://github.com/jeanmathieupotvin/nanotools/issues/new
+URL: https://github.com/jeanmathieupotvin/nanocli
+BugReports: https://github.com/jeanmathieupotvin/nanocli/issues/new
 ByteCompile: true
 Encoding: UTF-8
 Language: en
 NeedsCompilation: no
 Roxygen: list(markdown = TRUE, r6 = TRUE)
 RoxygenNote: 7.1.2
-Depends: 
-    R (>= 4.0)
 Suggests: 
-    microbenchmark,
     covr,
-    withr,
+    microbenchmark,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Config/testthat/parallel: true
+Depends: 
+    R (>= 4.0)
