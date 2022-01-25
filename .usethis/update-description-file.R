@@ -9,7 +9,7 @@
 usethis::use_description(check_name = TRUE, roxygen = TRUE, fields = list(
     Package          = "nanocli",
     Title            = "Create command-line interfaces easily",
-    Version          = "0.1.0.9000",
+    Version          = "0.1.0.9001",
     License          = "MIT + file LICENSE",
     Language         = "en",
     Encoding         = "UTF-8",
