@@ -5,4 +5,4 @@
 .temp
 .RData
 nanocli.code-workspace
-_snaps
+_snaps/*
