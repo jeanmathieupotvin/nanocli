@@ -81,7 +81,7 @@ decorateString <- function(
     if ({ paramsLength <- length(sgrSet) } != length(sgrReset)) {
         stop("lengths of `sgrSet` and `sgrReset` are not equal.\n",
              "Each SGR parameter that sets a display attribute ",
-             "have an equivalent reset attribute.",
+             "must have an equivalent reset attribute.",
              call. = FALSE)
     }
 
