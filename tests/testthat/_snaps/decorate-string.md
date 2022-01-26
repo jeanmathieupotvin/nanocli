@@ -32,7 +32,7 @@
       decorateString("string", sgrSet = c(1L, 2L), sgrReset = 22L)
     Error <simpleError>
       lengths of `sgrSet` and `sgrReset` are not equal.
-      Each SGR parameter that sets a display attribute have an equivalent reset attribute.
+      Each SGR parameter that sets a display attribute must have an equivalent reset attribute.
 
 ---
 
