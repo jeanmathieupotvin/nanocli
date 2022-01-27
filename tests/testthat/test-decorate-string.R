@@ -9,17 +9,19 @@ test_that("decorateString() returns a DecoratedString", {
 test_that("decorateString() validates its arguments", {
     expect_error(decorateString(""))
     expect_error(decorateString(1L))
+    expect_error(decorateString(NA_character_))
     expect_error(decorateString("string", prefix = 1L))
+    expect_error(decorateString("string", prefix = NA_integer_))
     expect_error(decorateString("string", suffix = 1L))
-    expect_error(decorateString("string", sgrSet = c(1L, 2L), sgrReset = 22L))
-    expect_error(decorateString("string", sgrSet = "error",   sgrReset = 22L))
-    expect_error(decorateString("string", sgrSet = 1L,        sgrReset = "error"))
+    expect_error(decorateString("string", suffix = NA_integer_))
+    expect_error(decorateString("string", sgrSet = c(1L, 2L),   sgrReset = 22L))
+    expect_error(decorateString("string", sgrSet = "error",     sgrReset = 22L))
+    expect_error(decorateString("string", sgrSet = NA_integer_, sgrReset = 22L))
+    expect_error(decorateString("string", sgrSet = 1L,          sgrReset = "error"))
+    expect_error(decorateString("string", sgrSet = NA_integer_, sgrReset = NA_integer_))
 
     expect_snapshot(error = TRUE, {
         decorateString("")
-    })
-    expect_snapshot(error = TRUE, {
-        decorateString(1L)
     })
     expect_snapshot(error = TRUE, {
         decorateString("string", prefix = 1L)

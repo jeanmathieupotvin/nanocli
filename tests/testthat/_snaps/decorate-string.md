@@ -8,13 +8,6 @@
 ---
 
     Code
-      decorateString(1L)
-    Error <simpleError>
-      TypeError: `string` must be a non-empty character string.
-
----
-
-    Code
       decorateString("string", prefix = 1L)
     Error <simpleError>
       TypeError: `prefix` must be a character string.
@@ -31,7 +24,7 @@
     Code
       decorateString("string", sgrSet = c(1L, 2L), sgrReset = 22L)
     Error <simpleError>
-      lengths of `sgrSet` and `sgrReset` are not equal.
+      LogicError: lengths of `sgrSet` and `sgrReset` are not equal.
       Each SGR parameter that sets a display attribute must have an equivalent reset attribute.
 
 ---

@@ -61,7 +61,8 @@ decorateString <- function(
     prefix   = character(1L),
     suffix   = character(1L),
     sgrSet   = integer(),
-    sgrReset = integer()) {
+    sgrReset = integer())
+{
     if (!isScalarChr(string) || !nzchar(string)) {
         stop("\rTypeError: `string` must be a non-empty character string.",
              call. = FALSE)
@@ -79,9 +80,9 @@ decorateString <- function(
     # be reset via another SGR parameter. This ensures that
     # attributes are always scoped to the decorated string.
     if ({ paramsLength <- length(sgrSet) } != length(sgrReset)) {
-        stop("lengths of `sgrSet` and `sgrReset` are not equal.\n",
-             "Each SGR parameter that sets a display attribute ",
-             "must have an equivalent reset attribute.",
+        stop("\rLogicError: lengths of `sgrSet` and `sgrReset` are not equal.\n",
+             "Each SGR parameter that sets a display attribute must have an",
+             " equivalent reset attribute.",
              call. = FALSE)
     }
 
