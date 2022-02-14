@@ -3,6 +3,8 @@
 .Rdata
 .Renviron
 .temp
+.ideas/*
 .RData
 nanocli.code-workspace
 _snaps/*
+
